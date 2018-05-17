@@ -1,0 +1,15 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    ports:
+      - '5432:5432'
+  web:
+    build: .
+    command: sbt run
+    volumes:
+      - .:/myapp
+    ports:
+      - "9000:9000"
+    depends_on:
+      - db
