@@ -1,3 +1,7 @@
+.idea/
+.envrc
+.ivy2/
+
 ### https://raw.github.com/github/gitignore/e9c3096114fd81b92cf989f7343d7b168b80d994/Global/SBT.gitignore
 
 # Simple Build Tool
@@ -18,5 +22,45 @@ project/plugins/project/
 
 *.class
 *.log
+
+
+gibo 2.0 by Simon Whitaker <sw@netcetera.org>
+https://github.com/simonwhitaker/gibo
+### https://raw.github.com/github/gitignore/90f149de451a5433aebd94d02d11b0e28843a1af/PlayFramework.gitignore
+
+# Ignore Play! working directory #
+bin/
+/db
+.eclipse
+/lib/
+/logs/
+/modules
+/project/project
+/project/target
+/target
+tmp/
+test-result
+server.pid
+*.eml
+/dist/
+.cache
+
+
+### https://raw.github.com/github/gitignore/90f149de451a5433aebd94d02d11b0e28843a1af/Gradle.gitignore
+
+.gradle
+/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
 
 

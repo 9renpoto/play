@@ -16,7 +16,7 @@ jobs:
           command: sleep 1
       - run:
           name: test
-          command: docker-compose run web sbt test
+          command: docker-compose run web sbt clean coverage test coverageReport exit && bash <(curl -s https://codecov.io/bash)
       - run:
           name: docker-compose down
           command: docker-compose down

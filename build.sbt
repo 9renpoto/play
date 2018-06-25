@@ -8,7 +8,10 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala)
 scalaVersion := "2.12.4"
 
 libraryDependencies += guice
+libraryDependencies += "io.sentry" % "sentry-logback" % "1.7.5"
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % Test
+
+coverageEnabled:=true
 
 // Adds additional packages into Twirl
 //TwirlKeys.templateImports += "9renpoto.controllers._"

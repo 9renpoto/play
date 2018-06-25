@@ -6,6 +6,7 @@ services:
       - '5432:5432'
   web:
     build: .
+    image: 9renpoto/scala
     command: sbt run
     volumes:
       - .:/myapp
