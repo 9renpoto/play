@@ -7,9 +7,17 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
 scalaVersion := "2.12.4"
 
-libraryDependencies += guice
-libraryDependencies += "io.sentry" % "sentry-logback" % "1.7.5"
-libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % Test
+libraryDependencies ++= Seq(
+  evolutions,
+  jdbc,
+  guice,
+  "io.sentry" % "sentry-logback" % "1.7.5",
+  "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2",
+  "org.postgresql" % "postgresql" % "42.1.4",
+  "org.scalikejdbc" %% "scalikejdbc"                  % "3.2.2",
+  "org.scalikejdbc" %% "scalikejdbc-config"           % "3.2.2",
+  "org.scalikejdbc" %% "scalikejdbc-play-dbapi-adapter" % "2.6.0-scalikejdbc-3.2"
+)
 
 coverageEnabled:=true
 

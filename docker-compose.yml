@@ -4,13 +4,16 @@ services:
     image: postgres:latest@sha256:e033c99282a81622b1eed36b735034e10d633a34cca3387f6142381770cfbcc8
     ports:
       - '5432:5432'
+    tty: true
+    restart: always
   web:
     build: .
     image: 9renpoto/scala
     command: sbt run
+    env_file: .env
     volumes:
       - .:/myapp
     ports:
-      - "9000:9000"
+      - "8000:9000"
     depends_on:
       - db

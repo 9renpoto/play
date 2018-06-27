@@ -5,5 +5,10 @@ scala:
 jdk:
 - oraclejdk8
 - oraclejdk9
+env:
+  global:
+    DB_URL='postgresql://localhost:5432/postgres'
+services:
+- postgresql
 notifications:
   email: false
