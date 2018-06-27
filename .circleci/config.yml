@@ -6,6 +6,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: enviroments
+          command: cp .env.local .env
+      - run:
           name: docker-compose build
           command: docker-compose build
       - run:
