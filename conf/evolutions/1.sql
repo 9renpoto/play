@@ -1,3 +1,4 @@
+drop table if exists dummy
 create table dummy(
     id integer not null,
     name varchar(255),
@@ -5,4 +6,3 @@ create table dummy(
     updated_at datetime not null
 );
 
-drop table dummy
