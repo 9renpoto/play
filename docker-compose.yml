@@ -1,7 +1,7 @@
 version: '3'
 services:
   db:
-    image: postgres:latest@sha256:22d53478de073641898eb32cd8391d353fb6afdd41bee866765cb6a4eb2ebf66
+    image: postgres:latest@sha256:4d750405acf561106b4dfecec72af6b91ed8329adf0fe2fc125b992e8d778ae6
     ports:
       - '5432:5432'
     tty: true
