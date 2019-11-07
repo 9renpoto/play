@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalatestplus.play" %% "scalatestplus-play" % "4.0.3",
   "org.postgresql" % "postgresql" % "42.2.8",
   "org.scalikejdbc" %% "scalikejdbc" % "3.4.0",
-  "org.scalikejdbc" %% "scalikejdbc-config" % "3.3.5",
+  "org.scalikejdbc" %% "scalikejdbc-config" % "3.4.0",
   "org.scalikejdbc" %% "scalikejdbc-play-dbapi-adapter" % "2.6.0-scalikejdbc-3.3",
   "org.scalikejdbc" %% "scalikejdbc-play-fixture" % "2.6.0-scalikejdbc-3.3"
 )
