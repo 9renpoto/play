@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   guice,
   "io.sentry" % "sentry-logback" % "1.7.30",
   "org.scalatestplus.play" %% "scalatestplus-play" % "5.1.0",
-  "org.postgresql" % "postgresql" % "42.2.12",
+  "org.postgresql" % "postgresql" % "42.2.13",
   "org.scalikejdbc" %% "scalikejdbc" % "3.4.2",
   "org.scalikejdbc" %% "scalikejdbc-config" % "3.4.2",
   "org.scalikejdbc" %% "scalikejdbc-play-dbapi-adapter" % "2.8.0-scalikejdbc-3.4",
