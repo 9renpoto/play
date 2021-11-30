@@ -3,7 +3,7 @@ plugins {
     id 'idea'
 }
 
-def playVersion = '2.8.9'
+def playVersion = '2.8.10'
 def scalaVersion = "2.12"
 
 model {
