@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   evolutions,
   jdbc,
   guice,
-  "io.sentry" % "sentry-logback" % "6.1.3",
+  "io.sentry" % "sentry-logback" % "6.1.4",
   "org.scalatestplus.play" %% "scalatestplus-play" % "5.1.0",
   "org.postgresql" % "postgresql" % "42.4.0",
   "org.scalikejdbc" %% "scalikejdbc" % "4.0.0",
